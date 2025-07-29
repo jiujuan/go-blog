@@ -1,0 +1,24 @@
+server:
+  port: "8080"
+  host: "localhost"
+  read_timeout: 30
+  write_timeout: 30
+  idle_timeout: 120
+
+database:
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "password"
+  database: "go_blog_db"
+  max_idle_conns: 10
+  max_open_conns: 100
+  max_lifetime: 3600
+
+jwt:
+  secret: "your-secret-key-change-in-production"
+  expire_time: 168  # 7 days in hours
+
+log:
+  level: "info"
+  format: "json"
